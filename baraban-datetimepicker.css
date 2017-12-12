@@ -1,0 +1,108 @@
+.bbn_dtp_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: rgba(0,0,0,0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.bbn_dtp_wrapper {
+	width: 100%;
+	max-width: 336px;
+	font-size: 16px;
+	display: inline-block;
+	background-color: #fff;
+	padding: 16px;
+	margin: 16px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 100;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, 0.84);
+}
+
+.bbn_dtp_wrapper.inline {
+	box-shadow: none;
+}
+
+.bbn_dtp_wrapper .bbn_buttons_wrapper {
+	padding-top: 8px;
+	float: right;
+}
+.bbn_dtp_wrapper .bbn_buttons_wrapper button {
+	outline: none;
+	background: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #1E88E5;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	padding: 0 8px;
+	cursor: pointer;
+	border-radius: 2px;
+	display: inline-block;
+	-webkit-transition: background-color ease-in .2s;
+	transition: background-color ease-in .2s;
+	font-weight: 500;
+	border: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-left: 16px;
+}
+.bbn_dtp_wrapper .bbn_buttons_wrapper button[disabled] {
+	background-color: transparent;
+	color: #CCCCCC;
+}
+.bbn_dtp_wrapper .bbn_dtp_timepicker,
+.bbn_dtp_wrapper .bbn_dtp_datepicker {
+	display: flex;
+	justify-content: space-around;
+}
+.bbn_dtp_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 8px;
+}
+.bbn_dtp_header .bbn_dtp_toggle {
+	cursor: pointer;
+}
+
+.material-icon {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga';
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: middle;
+	transition: color linear .15s;
+	border: none;
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
+}
+.material-icon[data-icon]:before {
+	content: attr(data-icon);
+}
